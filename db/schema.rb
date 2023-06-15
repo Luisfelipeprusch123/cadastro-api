@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_02_194720) do
-  create_table "tdlists", force: :cascade do |t|
+ActiveRecord::Schema[7.0].define(version: 2023_06_13_185503) do
+  create_table "articles", force: :cascade do |t|
     t.string "title"
-    t.boolean "done"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "login_users", force: :cascade do |t|
+    t.string "firstname"
+    t.string "lastname"
+    t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

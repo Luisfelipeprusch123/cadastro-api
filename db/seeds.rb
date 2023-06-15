@@ -4,3 +4,4 @@
 # Examples:
 #
 Tdlist.create(title:  "Caio Nacimento", done: false)
+User.create(nome: "Luis felipe", telefone: "(51) 985959231", false )

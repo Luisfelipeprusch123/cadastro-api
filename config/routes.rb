@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :articles
+  resources :login_users
+  resources :logins
   get 'tdlists/index'
   get 'tdlists/create'
   get 'tdlists/update'

@@ -11,9 +11,10 @@ gem "sqlite3", "~> 1.4"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
-
+gem 'rspec-rails'
+gem 'httparty'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-# gem "jbuilder"
+ gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -26,7 +27,7 @@ gem "puma", "~> 5.0"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
-
+gem "pg"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
@@ -46,3 +47,13 @@ group :development do
   # gem "spring"
 end
 
+
+gem "simplecov", "~> 0.22.0", :group => :test, :require => false
+
+gem "simplecov_json_formatter", "~> 0.1.4", :group => :test, :require => false
+
+gem "shoulda-matchers", "~> 5.3", :group => :test
+
+gem "factory_bot_rails", "~> 6.2", :groups => [:development, :test]
+
+gem "faker", "~> 3.2", :groups => [:development, :test]
